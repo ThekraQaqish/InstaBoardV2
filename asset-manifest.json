@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/InstaBoardV2/static/css/main.6b3127a1.css",
-    "main.js": "/InstaBoardV2/static/js/main.130185d4.js",
+    "main.js": "/InstaBoardV2/static/js/main.57d83c29.js",
     "static/js/453.1a16ed4e.chunk.js": "/InstaBoardV2/static/js/453.1a16ed4e.chunk.js",
     "index.html": "/InstaBoardV2/index.html",
     "main.6b3127a1.css.map": "/InstaBoardV2/static/css/main.6b3127a1.css.map",
-    "main.130185d4.js.map": "/InstaBoardV2/static/js/main.130185d4.js.map",
+    "main.57d83c29.js.map": "/InstaBoardV2/static/js/main.57d83c29.js.map",
     "453.1a16ed4e.chunk.js.map": "/InstaBoardV2/static/js/453.1a16ed4e.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.6b3127a1.css",
-    "static/js/main.130185d4.js"
+    "static/js/main.57d83c29.js"
   ]
 }
