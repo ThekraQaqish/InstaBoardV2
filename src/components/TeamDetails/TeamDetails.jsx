@@ -16,7 +16,7 @@ export default function TeamDetails({ darkMode }) {
         <div className={`team-details-wrapper ${darkMode ? 'dark' : 'light'}`}>
 
             <div className="cover-photo">
-                <img src="/images/cover.jpg" alt="Cover" style={{ width: '100%', height: '180px', objectFit: 'cover' }} />
+            <img src={`${process.env.PUBLIC_URL}/images/cover.jpg`} alt="cover" />
 
                 <img 
                     src={user.picture.large} 
