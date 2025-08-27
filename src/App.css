@@ -14,7 +14,7 @@
 }
 
 .App-header {
-  background-color: #282c34;
+  background-color: #f0f0f0;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -35,4 +35,67 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #f0f0f0;;
+  color: #dcdcdc;
+  font-family: 'Poppins', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+header {
+  padding: 20px 0;
+  text-align: center;
+  box-shadow: 0 2px 10px rgba(212, 175, 55, 0.3);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+header h1 {
+  margin: 0;
+  color: #d4af37;
+  font-weight: 700;
+  letter-spacing: 2px;
+  font-size: 2.5rem;
+}
+
+.container {
+  max-width: 1100px;
+  margin: 40px auto;
+  padding: 0 20px;
+}
+
+button {
+  background-color: #f0f0f0;
+  color: #d4af37;
+  padding: 12px 28px;
+  border: none;
+  border-radius: 12px;
+  font-weight: 600;
+  font-size: 1.1rem;
+  cursor: pointer;
+  box-shadow: 0 4px 10px rgba(212, 175, 55, 0.4);
+  transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
+}
+
+button:hover {
+  background-color: #5a5a5a;
+  transform: scale(1.05);
+  box-shadow: 0 6px 15px rgba(212, 175, 55, 0.7);
+}
+
+body {
+  background-color: #FEFAE0;
+  color: #121212;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+body.dark {
+  background-color: #121212;
+  color: #ffffff;
 }
