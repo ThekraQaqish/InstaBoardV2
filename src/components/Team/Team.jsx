@@ -89,7 +89,7 @@ export default function Team({ darkMode, toggleDarkMode }) {
       </div>
 
       <div className="loadMoreWrapper">
-        <button className="load-more-btn">Load More</button>
+        <button className="load-more-btn" onClick={handlePageNumber}>Load More</button>
       </div>
     </div>
   );

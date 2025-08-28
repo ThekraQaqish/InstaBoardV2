@@ -1,5 +1,6 @@
 import './Home.css';
 import { Link } from 'react-router-dom';
+import { FaUser, FaInfoCircle, FaSearch, FaHeart } from 'react-icons/fa';
 
 export default function Home() {
   return (
@@ -14,10 +15,10 @@ export default function Home() {
         </p>
         <div className="hero-buttons">
           <Link to="/team" className="btn-primary">
-            <i className="icon">👤</i> Meet The Team →
+            <FaUser /> Meet The Team
           </Link>
           <Link to="/about" className="btn-secondary">
-            <i className="icon">ℹ️</i> About Us
+            <FaInfoCircle /> About Us
           </Link>
         </div>
       </section>
@@ -34,13 +35,13 @@ export default function Home() {
           </div>
           <div className="feature-card">
             <div className="feature-icon">❤️</div>
-            <h3 className="feature-title">Like Users</h3>
+            <h3 className="feature-title like">Like Users</h3>
             <p className="feature-text">
               Mark your favorites and save them locally using localStorage.
             </p>
           </div>
           <div className="feature-card">
-            <div className="feature-icon">ℹ️</div>
+            <div className="feature-icon"><FaInfoCircle /></div>
             <h3 className="feature-title">View Details</h3>
             <p className="feature-text">
               See full user info including email, location, and more.

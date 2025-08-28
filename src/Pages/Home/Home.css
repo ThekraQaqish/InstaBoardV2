@@ -52,6 +52,11 @@ body.light .feature-text {
 body.light .section-title {
   color: #F57C00;
 }
+.btn-primary,
+.btn-secondary,
+.nav-link {
+  text-decoration: none; 
+}
 
 body.light .feature-card {
   background-color: #fff;
@@ -120,7 +125,6 @@ body.dark .footer {
   justify-content: space-between;
   align-items: center;
   padding: 20px 40px;
-  position: sticky;
   top: 0;
   z-index: 1000;
   transition: background-color 0.3s ease;
@@ -262,9 +266,10 @@ body.dark .footer {
 
 .feature-icon {
   font-size: 2rem;
-  color: #F57C00;
+  color: #f4dbc2;
   margin-bottom: 15px;
 }
+
 
 .feature-title {
   font-size: 1.3rem;

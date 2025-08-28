@@ -1,12 +1,15 @@
 import './About.css';
 import { Link } from 'react-router-dom';
+import { FaUser, FaHome } from 'react-icons/fa'; // استيراد أيقونات React Icons
 
 export default function About() {
   return (
     <div className="about-wrapper">
 
       <main className="about-content">
-        <h1 className="page-title">About <span className="highlight">InstaBoard</span></h1>
+        <h1 className="page-title">
+          About <span className="highlight">InstaBoard</span>
+        </h1>
 
         <section className="about-section">
           <p>
@@ -35,10 +38,10 @@ export default function About() {
 
         <div className="about-buttons">
           <Link to="/team" className="btn-primary">
-            <i className="icon">👤</i> Meet The Team →
+            <FaUser style={{ marginRight: '8px' }} /> Meet The Team
           </Link>
           <Link to="/" className="btn-secondary">
-            <i className="icon">🏠</i> Back to Home
+            <FaHome style={{ marginRight: '8px' }} /> Back to Home
           </Link>
         </div>
       </main>
