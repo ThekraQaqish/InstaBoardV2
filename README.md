@@ -1,70 +1,37 @@
-# Getting Started with Create React App
+# Insta Board
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## About
+Insta-Board is a React app that displays user profile cards fetched from the Random User API.  
+It includes interactive features like dark mode, email toggle, and infinite load more.
 
-## Available Scripts
+## Features
+- Reusable `UserCard` component with props.
+- Dynamic user list using Axios (`https://randomuser.me/api/?results=12`).
+- "Load More" button to fetch additional users.
+- Like button for each card (state managed with `useState`).
+- Toggle to show/hide user email.
+- **Dark Mode** toggle: changes the theme across all cards dynamically.
+- Search filter by name.
 
-In the project directory, you can run:
+## Challenges
+Implementing **dark mode** was a bit tricky — passing the theme state down to each card and updating styles dynamically.
 
-### `npm start`
+## Time Spent
+Approximately **8 hours** to finish everything.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## How It Works
+- `App.js`: Contains the main theme state and renders the main layout.
+- `Team.js` / `UserList.js`: Fetches and manages user data, handles "Load More".
+- `UserCard.js`: Displays individual user info with interactivity and dynamic styling.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Setup
+1. `npm install`
+2. `npm start`
 
-### `npm test`
+## Deployment
+The app is deployed on GitHub Pages:  
+[View Live Site](https://ThekraQaqish.github.io/InstaBoardV2)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+---
 
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Made with ❤️ using React
